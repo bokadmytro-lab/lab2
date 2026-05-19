@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>TechShop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">TechShop</div>
+  <input id="search" placeholder="Пошук товарів...">
+  <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+</header>
+
+<!-- CAROUSEL -->
+<section class="carousel">
+  <div id="slides" class="slides"></div>
+</section>
+
+<!-- FILTERS -->
+<section class="controls">
+  <button data-type="all" class="active">Усі</button>
+  <button data-type="laptop">Ноутбуки</button>
+  <button data-type="tablet">Планшети</button>
+  <button data-type="phone">Телефони</button>
+
+  <select id="sort">
+    <option value="">Сортування</option>
+    <option value="name">Назва</option>
+    <option value="price">Ціна</option>
+  </select>
+
+  <input id="min" placeholder="від">
+  <input id="max" placeholder="до">
+  <button id="priceBtn">OK</button>
+</section>
+
+<!-- PRODUCTS -->
+<main id="products"></main>
+
+<!-- CART -->
+<div id="cart" class="cart hidden"></div>
+
+<!-- AD -->
+<div id="ad" class="ad hidden">
+  <div class="ad-box">
+    <h2>🔥 Акція</h2>
+    <p>Знижки до -50%</p>
+    <button id="closeAd" disabled>Закрити (5)</button>
+  </div>
+</div>
+
+<!-- BUTTONS -->
+<button id="homeBtn">🏠</button>
+<button id="toTop">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- РЕКЛАМА -->
+<div id="ad" class="ad hidden">
+  <div class="ad-box">
+    <h2>🔥 Велика акція</h2>
+    <p>Знижки до -50% на техніку</p>
+    <button id="closeAd" disabled>Закрити (5)</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
